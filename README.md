@@ -1,1 +1,1 @@
-Il s'agit de site de restauration proposant de la cuisine Béninoise.
+Il s'agit d'un site de restauration proposant de la cuisine Béninoise.
