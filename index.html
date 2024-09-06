@@ -5,19 +5,300 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resto_chez_mimi</title>
     <link rel="stylesheet" href="style.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--link href="https://fonts.googleapis.com/css2?family=Poppins:wght@0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet"-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header> 
-        <a href="#" class="logo"><span>C</span>hez <span>M</span>imi </a>
+        <!--a href="#" class="logo"><span>C</span>hez <span>M</span>imi </a-->
+        <div class="logo">
+            <a href="#">
+                <img src="./images/logo_resto_review.png" alt="Logo de chez mimi">
+            </a>
+        </div>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
         <ul class="navbar">
-           <li><a href="#">Accueil</a></li>
-           <li><a href="#">A propos</a></li>
-           <li><a href="#">Menu</a></li>
-           <li><a href="#">Expert</a></li>
-           <li><a href="#">Témoignage</a></li>
-           <li><a href="#">Contact</a></li>
-           <a href="#" class="btn-commande">Commandez !</a>
+            <li><a href="#banniere" onclick="toggleMenu();">Accueil</a></li>
+            <li><a href="#apropos" onclick="toggleMenu();">A propos</a></li>
+            <li><a href="#menu" onclick="toggleMenu();">Menu</a></li>
+            <li><a href="#expert" onclick="toggleMenu();">Expert</a></li>
+            <li><a href="#temoignage" onclick="toggleMenu();">Temoignage</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+            <a href="#" class="btn-commande"onclick="toggleMenu();">Commandez !</a>
         </ul>
     </header>
+
+    <section class="banniere" id="banniere">
+        <div class="contenu">
+            <h2>Des mets exceptionnels qui comblent vos envies</h2>
+            <p>
+                Envie d’un bon moment entre amis ou en famille ?  Plongez dans l'art culinaire béninois à travers nos mets exceptionnels. Rejoignez-nous!
+            </p>
+            <a href="#" class="btn1">Notre menu</a>
+            <a href="#" class="btn2">Commander</a>
+        </div>
+    </section>
+
+    <section class="apropos" id="apropos">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titre"><span>A</span> Propos De <span>N</span>ous</h2>
+                <p>
+                    Chez Mimi, nous vous invitons à découvrir l'essence de la cuisine béninoise dans toute sa splendeur. 
+                    Chaque plat est préparé avec amour et authenticité, en mettant à l'honneur des recettes traditionnelles qui raviront vos papilles.<br><br>
+
+                    Nos mets, riches en saveurs et en couleurs, sont un véritable voyage culinaire au cœur du Bénin. Que ce soit pour un déjeuner entre amis, 
+                    un dîner en famille, ou simplement une envie de déguster des spécialités locales, Chez Mimi vous garantit une expérience gustative unique dans une ambiance chaleureuse et conviviale.<br><br>
+
+                    Ne manquez pas l'occasion de savourer nos délicieux plats, que vous pouvez déguster sur place ou commander pour un plaisir à emporter. 
+                    Chez Mimi, c’est bien plus qu’un repas, c’est une célébration de la culture béninoise à travers la cuisine.
+                </p>
+            </div>
+            
+            <div class="col50">
+                <div class="img">
+                    <img src="./images/banner_2_2.png" alt="image">
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <div class="titre-menu">
+            <h2 class="titre"><span>N</span>otre <span>M</span>enu</h2>
+            <p>
+               Voici nos plats aux saveurs et aux arômes variés qui offrent une véritable aventure culinaire.
+            </p>
+        </div>
+
+        <div class="contenu">
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/food_12.png" alt="image">
+                </div>
+                
+                <div class="text">
+                   <h3> Igname pilée avec sauce d'arachide</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/food_9.png" alt="image">
+                </div>
+                
+                <div class="text">
+                   <h3> Télibo (Pâte noir) avec sauce légume "Manh Tindjan"</h3>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/food_1.png" alt="image">
+                </div>
+                
+                <div class="text">
+                   <h3> Amiwô (Pâte rouge) avec moyo</h3>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/food_16.png" alt="image">
+                </div>
+                
+                <div class="text">
+                   <h3> Ablo avec viande et piment rouge</h3>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/food_6.png" alt="image">
+                </div>
+                
+                <div class="text">
+                   <h3> Riz blanc avec sauce et poisson</h3>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/food_3.png" alt="image">
+                </div>
+                
+                <div class="text">
+                   <h3> Atassi avec oeuf</h3>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/food_10.png" alt="image">
+                </div>
+                
+                <div class="text">
+                   <h3> Attiéké avec poisson</h3>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/food_13.png" alt="image">
+                </div>
+                
+                <div class="text">
+                   <h3> Kom avec poisson</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/food_8.png" alt="image">
+                </div>
+                
+                <div class="text">
+                   <h3> Jus de bissape</h3>
+                </div>
+            </div>
+            
+        </div>
+
+       <div class="titre-menu">
+         <a href="#" class="btn1">Voir plus</a>
+      </div>
+    </section>
+
+    <section class="expert" id="expert">
+        <div class="titre-menu">
+            <h2 class="titre">Nos <span>E</span>xperts</h2>
+            <p>Nos Chefs, de Véritables Artisans du Goût
+                Chez Mimi, nos cuisiniers sont bien plus que de simples chefs : ce sont de véritables artisans
+                 du goût, passionnés par l'art culinaire. Forts d'une expérience inégalée et d'un amour profond 
+                 pour les saveurs du Bénin, nos experts sélectionnent les meilleurs ingrédients et mettent en œuvre des
+                 techniques de cuisine traditionnelles et modernes pour vous offrir une expérience gastronomique unique.  </p>
+        </div>
+        <div class="contenu">
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/Chef1.png" alt="">
+                </div>
+                <div class="text">
+                    <h3>Fatime</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/chef2.png" alt="">
+                </div>
+                <div class="text">
+                    <h3>Kèmi</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/chef3.png" alt="">
+                </div>
+                <div class="text">
+                    <h3>Florian</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/chef4.png" alt="">
+                </div>
+                <div class="text">
+                    <h3>Ninima et Franck</h3>
+                </div>
+            </div>
+        </div>
+     </div>
+    </section>
+     <section class="temoignage" id="temoignage">
+        <div class="titre blanc">
+            <h2 class="titre">Nos <span>C</span>lients</h2>
+            <p>Chez Mimi, nous avons à cœur de régaler nos clients et de leur offrir une expérience culinaire inoubliable. 
+                Rien ne nous fait plus plaisir que de recevoir leurs retours chaleureux. </p>
+        </div>
+        <div class="contenu">
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/women2.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>Témoignage de Viviane, passionnée de cuisine :
+                        "En tant que Béninoise vivant à l'étranger, j'ai souvent du mal à retrouver les goûts de chez moi. 
+                        Mais chez Mimi, j'ai enfin retrouvé ce lien avec ma culture ! Chaque plat me rappelle les repas en famille, et l’accueil chaleureux me fait me sentir
+                         comme à la maison. Je ne me lasse jamais de leur sauce Manh Tindjan. C'est une adresse incontournable pour tous les amateurs de cuisine africaine."</p>
+                    <h3>Viviane</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/man1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>Témoignage de David, gourmet curieux :
+                        "Je cherchais à découvrir de nouvelles saveurs,
+                         et Chez Mimi a dépassé toutes mes attentes. Les plats sont aussi colorés que délicieux, avec des 
+                         épices parfaitement dosées. J’ai été conquis par l'igname pilée. C’est une adresse que je recommande vivement pour quiconque veut explorer la richesse de la cuisine béninoise."</p>
+                    <h3>David</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <img src="./images/family.jpg" alt="">
+                </div>
+                <div class="text">
+                    <p>Témoignage de la famille de Chris :
+                        "Nous adorons venir chez Mimi en famille ! L'ambiance est conviviale et les enfants adorent les portions généreuses de riz et d'attiéké.
+                         Le personnel est toujours souriant, et nous nous sentons vraiment bien accueillis à chaque visite. Chez Mimi, c'est devenu notre restaurant préféré pour des moments familiaux inoubliables."</p>
+                    <h3>La famille de Chris</h3>
+                </div>
+            </div>
+        </div>
+     </section>
+     <section class="contact" id="contact">
+         <div class="titre noir">
+             <h2 class="titre"><span>C</span>ontact</h2>
+             <p>Envie d'en savoir plus ou de passer commande ? 
+                Contactez-nous dès maintenant, nous sommes à votre écoute pour répondre à toutes vos questions !<br> +229 </p>
+         </div>
+         <div class="contactform">
+             <h3>Envoyer un message</h3>
+             <div class="inputboite">
+                 <input type="text" placeholder="Nom">
+             </div>
+             <div class="inputboite">
+                <input type="text" placeholder="email">
+             </div>
+             <div class="inputboite">
+                <textarea placeholder="message"></textarea>
+             </div>
+             <div class="inputboite">
+                 <input type="submit" value="envoyer">
+             </div>
+         </div>
+     </section>
+     <div class="copyright">
+         <p>copyright 2024 <a href="#">Floriane ANATO</a> Tous droits reservé</p>
+     </div>
+     <script type="text/javascript">
+         window.addEventListener('scroll', function(){
+             const header =document.querySelector('header');
+             header.classList.toggle("sticky", window.scrollY > 0 );
+         });
+    
+         function toggleMenu(){
+             const tmenuToggle = document.querySelector('.menuToggle');
+             const navbar = document.querySelector('.navbar');
+             navbar.classList.toggle('active');
+             menuToggle.classList.toggle('active');
+         }
+     </script>
 </body>
 </html>
